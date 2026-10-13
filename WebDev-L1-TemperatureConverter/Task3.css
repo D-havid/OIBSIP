@@ -1,0 +1,117 @@
+
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #dbeafe, #c4b5fd);
+}
+
+/* Main converter box */
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: #312e81;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 15px 0 7px;
+    color: #334155;
+    font-weight: bold;
+}
+
+/* Input and dropdowns */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #818cf8;
+    border-color: #4f46e5;
+}
+
+/* Convert button */
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 7px;
+    background-color: #4f46e5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3730a3;
+}
+
+/* Result display */
+.result {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #eef2ff;
+    color: #312e81;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.reset-btn {
+    margin-top: 12px;
+    background-color: #64748b;
+}
+
+.reset-btn:hover {
+    background-color: #475569;
+}
+
+/* Mobile responsive design */
+@media (max-width: 450px) {
+    .container {
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}
